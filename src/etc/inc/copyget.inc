@@ -75,7 +75,7 @@ function updatecopyright() {
 // if it is more than a day old and the URL seems resolvable
 if (!file_exists($copyrightfile) ||
     ((time()-filemtime($copyrightfile) > $refreshinterval) && is_url_hostname_resolvable($FQDN))) {
-	updateCopyright();
+	//updateCopyright();
 }
 
 // Compare the copyright text contained in the first HTML <DIV>
